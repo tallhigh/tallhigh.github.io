@@ -1,0 +1,111 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+// Fonts
+@font-face {
+  font-family: FontAwesome;
+  src: url('/assets/font/FontAwesome.woff');
+}
+
+// CSS Reset and General Styles
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Styles
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #1a1a1a, #3B3B3B, #1A1A1A, #3B3B3B);
+  background-size: 800% 800%;
+  animation: background-color-animation 40s linear infinite;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+      .photo {
+        box-shadow: 0 5px 50px 0 rgba(200, 200, 200, .6);
+      }
+    }
+
+    .photo {
+      max-width: 150px;
+      border-radius: 50%;
+      box-shadow: 0 5px 50px 0 rgba(200, 200, 200, .3);
+      transition: all .3s ease;
+    }
+
+    .name {
+      font-weight: 600;
+      font-size: 24px;
+      text-align: center;
+      color: #fefefe;
+    }
+
+    .job-info {
+      display: flex;
+      flex-direction: row;
+
+      .position, .company {
+        margin: 0 2px;
+        color: #fefefe;
+        text-decoration: none;
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      margin-top: 16px;
+
+      a {
+        margin: 0 8px;
+        text-decoration: none;
+        font: normal normal normal 24px/1 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        color: #ffffff;
+        transition: all .3s ease;
+
+        &:hover{
+          transform: scale(1.15);
+        }
+
+        &.github:before {
+          content: "\f092";
+        }
+
+        &.twitter:before {
+          content: "\f081";
+        }
+
+        &.linkedin:before {
+          content: "\f08c";
+        }
+
+        &.email:before {
+          content: "\f199";
+        }
+      }
+    }
+
+  }
+}
+
+// Animations
+@keyframes background-color-animation {
+  0%, 100% {
+    background-position: 0 0
+  }
+  50% {
+    background-position: 93% 100%
+  }
+}
