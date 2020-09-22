@@ -16,9 +16,9 @@ main {
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(90deg, #1a1a1a, #3B3B3B, #1A1A1A, #3B3B3B);
-  background-size: 800% 800%;
-  animation: background-color-animation 40s linear infinite;
+  background: linear-gradient(0deg, #1a1a1a, #3B3B3B, #1A1A1A, #3B3B3B);
+  background-size: 12000% 800%;
+  animation: background-color-animation 60s linear infinite;
 }
 main .container {
   display: flex;
