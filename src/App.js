@@ -16,10 +16,10 @@ function App() {
                       <a className="company" href="//defacto.com.tr" target="_blank" rel="nofollow">@DeFacto</a>
                   </div>
                   <div className="links">
-                      <a href="//github.com/tallhigh" className="github"></a>
-                      <a href="//linkedin.com/in/talhaturhan" className="linkedin"></a>
-                      <a href="//twitter.com/tallhighs" className="twitter"></a>
-                      <a href="mailto:info@talhaturhan.com" className="email"></a>
+                      <a href="//github.com/tallhigh" className="github" target="_blank"></a>
+                      <a href="//linkedin.com/in/talhaturhan" className="linkedin" target="_blank"></a>
+                      <a href="//twitter.com/tallhighs" className="twitter" target="_blank"></a>
+                      <a href="mailto:info@talhaturhan.com" className="email" target="_blank"></a>
                   </div>
               </div>
             </main>
