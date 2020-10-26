@@ -1,1 +1,1 @@
-[tallhigh.github.io](https://tallhigh.github.io/)
+[talhaturhan.com](https://talhaturhan.com/)
