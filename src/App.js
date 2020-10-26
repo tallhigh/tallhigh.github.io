@@ -12,8 +12,8 @@ function App() {
                   <img className="photo" src="/assets/img/talha_turhan_cmp.jpg" alt="Talha Turhan"/>
                   <h1 className="name">Talha Turhan</h1>
                   <div className="job-info">
-                      <span className="position">Frontend Developer</span>
-                      <a className="company" href="//defacto.com.tr" target="_blank" rel="nofollow">@DeFacto</a>
+                      <span className="position">Software Developer</span>
+                      <a className="company" href="//trendyol.com" target="_blank" rel="nofollow">@Trendyol</a>
                   </div>
                   <div className="links">
                       <a href="//github.com/tallhigh" className="github" target="_blank"></a>
