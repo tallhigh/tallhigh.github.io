@@ -13,7 +13,7 @@ function App() {
                   <h1 className="name">Talha Turhan</h1>
                   <div className="job-info">
                       <span className="position">Software Developer</span>
-                      <a className="company" href="//trendyol.com" target="_blank" rel="nofollow">@Trendyol</a>
+                      <a className="company" href="//communitygaming.io" target="_blank" rel="nofollow">@Community Gaming</a>
                   </div>
                   <div className="links">
                       <a href="//github.com/tallhigh" className="github" target="_blank"></a>
