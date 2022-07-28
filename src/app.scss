@@ -32,15 +32,16 @@ main {
 
     &:hover {
       .photo {
+        border-radius: 30%;
         box-shadow: 0 5px 50px 0 rgba(200, 200, 200, .6);
       }
     }
 
     .photo {
       max-width: 150px;
-      border-radius: 5px;
+      border-radius: 15%;
       box-shadow: 0 5px 50px 0 rgba(200, 200, 200, .3);
-      transition: all .3s ease;
+      transition: all .5s ease;
     }
 
     .name {
@@ -62,21 +63,24 @@ main {
     }
 
     .links {
+      position: absolute;
       display: flex;
-      flex-direction: row;
-      margin-top: 16px;
+      flex-direction: column;
+      right: 0;
+      top: calc(50% - 24px * 4);
 
       a {
-        margin: 0 8px;
+        margin: 8px;
         text-decoration: none;
         font: normal normal normal 24px/1 FontAwesome;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
         color: #ffffff;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
 
         &:hover{
           transform: scale(1.15);
+          color: #ccc;
         }
 
         &.github:before {
