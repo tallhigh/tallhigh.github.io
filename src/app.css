@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 @font-face {
-  font-family: FontAwesome;
-  src: url("/assets/font/FontAwesome.woff");
+  font-family: FontAwesome4;
+  src: url("/assets/font/FontAwesome4.woff");
+}
+@font-face {
+  font-family: FontAwesome6;
+  src: url("/assets/font/FontAwesome6.woff");
 }
 * {
   margin: 0;
@@ -58,29 +62,38 @@ main .container .links {
   top: calc(50% - 96px);
 }
 main .container .links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 8px;
   text-decoration: none;
-  font: normal normal normal 24px/1 FontAwesome;
+  font: normal normal normal 24px/1 FontAwesome6;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   color: #ffffff;
   transition: all 0.3s ease;
+}
+main .container .links a.fa4 {
+  font: normal normal normal 24px/1 FontAwesome4 !important;
 }
 main .container .links a:hover {
   transform: scale(1.15);
   color: #ccc;
 }
 main .container .links a.github:before {
-  content: "\f092";
+  content: "\f09b";
 }
 main .container .links a.twitter:before {
-  content: "\f081";
+  content: "\f099";
 }
 main .container .links a.linkedin:before {
-  content: "\f08c";
+  content: "\f0e1";
 }
 main .container .links a.email:before {
-  content: "\f199";
+  content: "\f0e0";
+}
+main .container .links a.ethereum:before {
+  content: "\f42e";
 }
 
 @-webkit-keyframes background-color-animation {

@@ -3,8 +3,13 @@
 
 // Fonts
 @font-face {
-  font-family: FontAwesome;
-  src: url('/assets/font/FontAwesome.woff');
+  font-family: FontAwesome4;
+  src: url('/assets/font/FontAwesome4.woff');
+}
+
+@font-face {
+  font-family: FontAwesome6;
+  src: url('/assets/font/FontAwesome6.woff');
 }
 
 // CSS Reset and General Styles
@@ -70,13 +75,20 @@ main {
       top: calc(50% - 24px * 4);
 
       a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin: 8px;
         text-decoration: none;
-        font: normal normal normal 24px/1 FontAwesome;
+        font: normal normal normal 24px/1 FontAwesome6;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
         color: #ffffff;
         transition: all 0.3s ease;
+
+        &.fa4{
+          font: normal normal normal 24px/1 FontAwesome4!important;
+        }
 
         &:hover{
           transform: scale(1.15);
@@ -84,19 +96,23 @@ main {
         }
 
         &.github:before {
-          content: "\f092";
+          content: "\f09b";
         }
 
         &.twitter:before {
-          content: "\f081";
+          content: "\f099";
         }
 
         &.linkedin:before {
-          content: "\f08c";
+          content: "\f0e1";
         }
 
         &.email:before {
-          content: "\f199";
+          content: "\f0e0";
+        }
+
+        &.ethereum:before {
+          content: "\f42e";
         }
       }
     }
