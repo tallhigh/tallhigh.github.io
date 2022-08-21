@@ -19,7 +19,7 @@ function App() {
                       <a href="//github.com/tallhigh" className="github" target="_blank"></a>
                       <a href="//linkedin.com/in/talhaturhan" className="linkedin" target="_blank"></a>
                       <a href="//twitter.com/_tallhigh" className="twitter" target="_blank"></a>
-                      <a href="//tallhigh.eth" className="ethereum" target="_blank"></a>
+                      {/* <a href="//tallhigh.eth" className="ethereum" target="_blank"></a> */}
                       <a href="mailto:info@talhaturhan.com" className="fa4 email" target="_blank"></a>
                   </div>
               </div>
